@@ -75,7 +75,3 @@ Execute tests using:
 ```bash
 pytest
 ```
-
-## Additional Information  
-
-Ensure that all required dependencies are installed and that your Docker environment meets the necessary requirements. For more details, refer to the project documentation.
