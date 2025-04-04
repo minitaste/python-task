@@ -1,0 +1,16 @@
+POST http://localhost:8000/api/token/
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "1234"
+}
+
+###
+GET http://localhost:8000/api/menus/today/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQzNzY1MTM5LCJpYXQiOjE3NDM3NjQ4MzksImp0aSI6IjJjNjdjZmUyMmJkNjQyMjdiMzFkNTU1MGI2YzM1MGU2IiwidXNlcl9pZCI6MX0.ku8vn-v6l8o6tnaseXb8oy8dmP9L3zB1i3Krjyf8xLk
+
+
+###
+GET http://localhost:8000/api/menus/today/results/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQzNzYyODA5LCJpYXQiOjE3NDM3NjI1MDksImp0aSI6IjI5OGUzOGI1MTZmNTQ0YjI5ZWRmYTJmYTViZjE0YjUxIiwidXNlcl9pZCI6MX0.k6dhv9rtQpvbwa0V-_2uC-psWCNybE7e2iRi_VgX2mk
