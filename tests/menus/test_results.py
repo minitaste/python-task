@@ -4,8 +4,6 @@ import pytest
 from rest_framework import status
 
 
-
-
 @pytest.mark.django_db
 def test_today_result_view(auth_client, menu):
     response = auth_client.get("/api/menus/today/results/")

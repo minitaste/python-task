@@ -1,8 +1,10 @@
+from datetime import date
+
 import pytest
 from rest_framework import status
 
-from datetime import date
 from menus.models import Vote
+
 
 @pytest.mark.django_db
 def test_vote_create(auth_client, restaurant, menu):

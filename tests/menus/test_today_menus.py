@@ -12,9 +12,11 @@ def test_today_menu_view(auth_client, menu):
     response = auth_client.get("/api/menus/today/")
 
     assert response.status_code == status.HTTP_200_OK
-    assert len(response.data) == 1
-    assert response.data[0]["restaurant"] == menu.restaurant.id
-    assert response.data[0]["menu_data"]["lunch"] == "Pasta"
+
+    result = response.data["results"]
+    assert len(result) == 1
+    assert result[0]["restaurant"] == menu.restaurant.id
+    assert result[0]["menu_data"]["lunch"] == "Pasta"
 
 
 @pytest.mark.django_db

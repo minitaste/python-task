@@ -10,5 +10,5 @@ urlpatterns = [
         views.TodayResultView.as_view(),
         name="today-menu-results",
     ),
-    path("votes/", views.VoteCreateAPIView.as_view(), name="add-vote")
+    path("votes/", views.VoteCreateAPIView.as_view(), name="add-vote"),
 ]

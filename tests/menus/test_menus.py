@@ -9,7 +9,6 @@ from menus.models import Menu
 @pytest.mark.django_db
 def test_create_menu(auth_client, restaurant):
 
-
     payload = {
         "date": date.today(),
         "restaurant": restaurant.pk,
